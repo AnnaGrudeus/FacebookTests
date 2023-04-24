@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.FileHandler;
 
 class LoginLogout {
     private WebDriver driver;
@@ -26,7 +27,7 @@ class LoginLogout {
     String password = null;
 
     static {
-        System.setProperty("logback.configurationFile", "src/main/resources/logback.xml");
+        System.setProperty("logback.configurationFile", "logback.xml");
     }
 
     @BeforeAll
