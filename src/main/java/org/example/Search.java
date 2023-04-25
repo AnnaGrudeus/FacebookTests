@@ -26,6 +26,7 @@ class Search {
     String email = null;
     String password = null;
 
+    //setup logger file
     static {
         System.setProperty("logback.configurationFile", "src/main/resources/logback.xml");
     }
